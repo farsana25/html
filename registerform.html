@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form with Placeholder</title>
+    <style>
+        
+        body {
+            background-image: url('/kgf-chapter-2-with-arms-folded-lry3v4ejroelaj4m.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            /* Ensures padding is included in width */
+        }
+
+        input::placeholder {
+            color: #999;
+            opacity: 1;
+            /* Ensures placeholder color is visible */
+        }
+
+        input[type="text"].placeholder-small::placeholder,
+        input[type="password"].placeholder-small::placeholder {
+            width: 50%;
+            /* Adjust this percentage to control the width of the placeholder */
+            text-align: center;
+            /* Center the placeholder text */
+        }
+
+
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #017784;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <!-- <label for="username">Username:</label> -->
+        <input type="text" id="username" name="username" placeholder="Enter username" class="placeholder-small">
+
+        <!-- <label for="password">Password:</label> -->
+        <input type="password" id="password" name="password" placeholder="Enter password" class="placeholder-small">
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male"> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </label>
+        </div>
+
+        <input type="submit" value="Click me">
+
+
+        <label for="courses">jithin:</label>
+        <select id="courses" name="courses">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="cpp">C++</option>
+            <option value="php">PHP</option>
+            <option value="ai">AI</option>
+            <option value="dm">DM</option>
+            <option value="ML">Machine</option>
+            <option value="Data">Data</option>
+        </select>
+
+        <label>Details:</label>
+        <div class="checkbox-group">
+            <label for="detail_python">
+                <input type="checkbox" name="details" value="python"> Python
+            </label>
+            <label for="detail_java">
+                <input type="checkbox" name="details" value="java"> Java
+            </label>
+            <label for="detail_cpp">
+                <input type="checkbox" name="details" value="cpp"> C++
+            </label>
+            <label for="detail_php">
+                <input type="checkbox" name="details" value="php"> PHP
+            </label>
+            <label for="jithin">
+                <input type="checkbox" name="details" value="Data">Data
+            </label>
+        </div>
+    </form>
+</body>
+
+</html>
