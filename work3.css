@@ -1,0 +1,26 @@
+.box{
+    background-color: rgb(80, 208, 12);
+    padding-left: 20px;
+    padding-right: 30px;
+    width: 264px;
+    margin-left: 625px;
+}
+label{
+    margin-bottom: 40;
+    font-size: 14px;
+}
+
+
+input[type="text"],input[type="password"],input[type="checkbox"]{
+    padding: 5px;
+    font-size: 10px;
+    /* width: 5px; */
+}
+button{
+    background-color: #450bba;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;    
+    margin-top: 50px; 
+}
