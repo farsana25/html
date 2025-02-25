@@ -1,0 +1,118 @@
+.box {
+  background-color: rgb(235, 240, 245);
+  padding: 200px;
+  padding-top: 80px;
+  border-radius: 8px;
+  width: 300px;
+
+  height: 400px;
+
+  /* Center the box */
+  margin: 0 auto; /* Centers horizontally */
+  display: block; /* Ensures the box is treated as a block element */
+}
+
+body {
+  background: rgb(74, 238, 220);
+  background: linear-gradient(
+    127deg,
+    rgba(74, 238, 220, 1) 0%,
+    rgb(2, 78, 52) 52%
+  );
+}
+
+label {
+  /* margin: 10px;  */
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 400px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 10px;
+  padding-right: 170px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+.forgot {
+  text-align: right;
+  margin-left: 50px;
+}
+/* button {background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+    
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+     padding-left: 340px;
+
+  } */
+
+button {
+  background: rgb(52, 143, 80);
+  background: linear-gradient(
+    127deg,
+    rgba(52, 143, 80, 1) 0%,
+    rgba(86, 180, 211, 1) 57%,
+    rgba(52, 143, 80, 1) 78%
+  );
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.signup {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+img {
+  width: 40px;
+  padding-left: 40px;
+}
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-container input {
+  width: 100%;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+}
+.input-container label {
+  position: absolute;
+  left: 10px;
+  top: -14px;
+  font-size: 16px;
+  color: black;
+}

@@ -1,162 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <style>
     /* Global Styles */
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f4f4f4;
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
     }
 
     .box {
-        background-color: rgb(220, 226, 217);
-        padding: 40px 50px;
-        width: 400px;
-        box-sizing: border-box;
-        border-radius: 10px;
-        text-align: left;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      background-color: rgb(220, 226, 217);
+      padding: 40px 50px;
+      width: 400px;
+      height: 550px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
-        font-size: 24px;
-        margin-bottom: 15px;
-        color: #333;
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #333;
     }
 
     p {
-        font-size: 14px;
-        color: #333;
-        margin-bottom: 20px;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 20px;
     }
 
     label {
-        font-size: 14px;
-        color: #333;
-        margin-bottom: 5px;
-        display: inline-block;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+      display: inline-block;
     }
 
-    input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"] {
-        padding: 10px;
-        font-size: 14px;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        border: 2px solid #ddd;
-        width: 100%;
-        box-sizing: border-box;
-        outline: none;
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="checkbox"] {
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 2px solid #ddd;
+      width: 100%;
+      box-sizing: border-box;
+      outline: none;
     }
 
     button {
-        background-color: aqua;
-        color: aliceblue;
-        border: none;
-        cursor: pointer;
-        font-size: 14px;
-        height: 40px;
-        width: 100%;
-        border-radius: 8px;
+      background-color: aqua;
+      color: aliceblue;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      height: 40px;
+      width: 100%;
+      border-radius: 8px;
     }
 
     .forgot-password {
-        text-align: right;
-        margin-bottom: 20px;
+      text-align: right;
+      margin-bottom: 15px;
     }
 
     .forgot-password a {
-        color: #333;
-        font-size: 14px;
-        text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      text-decoration: none;
     }
 
     .social-login {
-        margin-bottom: 20px;
-        text-align: center;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     .box1 {
-        background-color: blue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        border-radius: 5px;
-        width: 100%;
-        margin-bottom: 10px;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 10px;
     }
 
     .sign {
-        font-size: 14px;
-        color: white;
+      font-size: 14px;
+      color: white;
     }
 
     .sign-up-google {
-        color: white;
-        text-decoration: none;
+      color: white;
+      text-decoration: none;
     }
 
     .register-link {
-        text-align: center;
-        font-size: 14px;
+      text-align: center;
+      font-size: 14px;
     }
 
     .register-link a {
-        color: rgb(11, 46, 170);
-        text-decoration: none;
+      color: rgb(11, 46, 170);
+      text-decoration: none;
     }
-    .checkbox{
 
-    }
-    
-</style>
-<body>
+    .rememberme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; 
+}
+
+.Remember-box {
+  margin-right: 10px;
+}
+
+.rm-text {
+  margin-right: 20px;
+}
+
+.forgot-password {
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="checkbox"] {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 7px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.social-login {
+  text-align: center;
+}
+
+.or-login-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  flex-grow: 1;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #000; 
+}
+
+.or-text {
+  margin: 0 10px;
+  font-weight: bold; 
+  color: #333;        
+}
+
+.box1 {
+  margin-top: 20px; 
+}
+
+.sign-up-google {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+.sign-up-google:hover {
+  text-decoration: underline;
+}
+
+  </style>
+  <body>
     <div class="box">
-        <h1>Welcome back!</h1>
-        <p>Enter to get unlimited access to data & information.</p>
-        
-        <label for="email">Email*</label><br>
-        <input type="email" id="email" placeholder="Enter your mail address"><br>
+      <h1>Welcome back!</h1>
+      <p>Enter to get unlimited access to data & information.</p>
 
-        <label for="password">Password*</label><br>
-        <input type="password" id="password" placeholder="Enter password"><br>
+      <label for="email">Email*</label><br />
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your mail address"
+      /><br />
 
-        <label for="checkbox">
-            <input type="checkbox" id="checkbox"> Remember me
-        </label><br>
-        <div class="checkbox"></div>
-    <div class="checkbox"></div>
-
+      <label for="password">Password*</label><br />
+      <input type="password" id="password" placeholder="Enter password" /><br />
+      <div class="rememberme">
+        <div class="Remember-box">
+          <input type="checkbox" id="Remember Me" />
+        </div>
+        <div class="rm-text">
+          <label for="Remember Me">Remember Me</label>
+        </div>
         <div class="forgot-password">
             <a href="#">Forgot your password?</a>
+          </div>
+      </div>
+      
+      <button type="submit">Login</button><br />
+      <div class="social-login">
+        <label for="or login with" class="or-login-label">
+          <hr class="line">
+          <span class="or-text">Or Login with</span>
+          <hr class="line">
+        </label>
+        <div class="box1">
+          <p class="sign">
+            <i class="fa-brands fa-google"></i>
+            <a class="sign-up-google" href="#">Sign up with Google</a>
+          </p>
         </div>
-
-        <button type="submit">Login</button><br>
-
-        <div class="social-login">
-            <p>or login with</p>
-            <div class="box1">
-                <p class="sign"> 
-                    <i class="fa-brands fa-google"></i>
-                    <a class="sign-up-google" href="#">Sign up with Google</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="register-link">
-            Don't have an account? <a href="#">Register here</a>
-        </div>
+      </div>
+      
+      <div class="register-link">
+        Don't have an account? <a href="#">Register here</a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
