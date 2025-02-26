@@ -5,13 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+.box{
+    height: 250px;
+    width: 200px;
+    padding-left: 90px;
+    padding-right: 50px;
+    border-radius: 4px;
+    margin-left: 600px;
+    margin-top: 200px;
+    background-color: aqua;
+
+}
+input[type='text'],input[type='password']{
+    border-radius: 5px;
+    height: 20px;
+
+}
+label{
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+    color: #000;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-left: 50px;
+
+}
+</style>
 <body>
-    <form action="">
+    <div class="box">
+    <form action=""><br>
         <label for="name">Name</label>
-        <input type="text"id="username"placeholder="Enter your name"><br>
+        <input type="text"id="username"placeholder="Enter your name"><br><br>
         <label for="password">Password</label>
-        <input type="password"id="password"placeholder="Enter your password"><br>
-    <button type="submit"><a href="">Login</a></button>
+        <input type="password"id="password"placeholder="Enter your password"><br><br>
+    <button type="submit">Login</button>
     </form>
+    </div>
+
 </body>
 </html>
